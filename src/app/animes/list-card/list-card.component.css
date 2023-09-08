@@ -1,0 +1,10 @@
+.paddings {
+  padding: 1rem;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cambia el tamaño mínimo y máximo según tus necesidades */
+  gap: 20px; /* Espacio entre las tarjetas */
+  justify-items: center;
+}

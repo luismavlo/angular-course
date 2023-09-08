@@ -1,24 +1,10 @@
 <h1> {{ title }}</h1>
 <hr>
 
-<div class="semaforo">
-  <div class="bg-red" [ngClass]="{'active': count === 3}"></div>
-  <div class="bg-yellow" [ngClass]="{'active': count === 2}"></div>
-  <div class="bg-green" [ngClass]="{'active': count === 1}"></div>
+<!-- <app-traffic-light></app-traffic-light> -->
+<div class="bg-dark">
+  <app-anime-card-list></app-anime-card-list>
 </div>
 
-<button class="btn" (click)="decrease()">
-  back color
-</button>
-&nbsp;
-<button class="btn" (click)="increase()">
-  next color
-</button>
 
-<h2>
-  <span>{{ count }} -</span>
-  
-  <span *ngIf="count === 1">EN MARCHA!</span>
-  <span *ngIf="count === 2">PREPÁRESE!</span>
-  <span *ngIf="count === 3">DETÉNGASE!</span>
-</h2>
+
