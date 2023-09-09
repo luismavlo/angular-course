@@ -12,6 +12,8 @@ export class CardComponent {
   public publicationDate: string | Date = '2023-09-08';
 
   isNewEpisode(): string {
+    //importante explicarar que las constantes de un metodo solo viven en ese metodo
+    //si quisieran que fuesen accedidas desde el html tienen que colocarlas como una propiedad
     const publicationDate: number = new Date(this.publicationDate).getTime();
     const today: number = new Date().getTime();
 
