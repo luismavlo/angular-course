@@ -1,12 +1,9 @@
 <h2 class="paddings">
   Episodios resientes
 </h2>
-<button (click)="deleteAnime()">
-  Eliminar 
-</button>
 
 <div class="card-list paddings" *ngIf="animes.length > 0; else withoutContent">
-  <app-anime-card *ngFor="let anime of animes"></app-anime-card>
+  <app-anime-card *ngFor="let anime of animes" [anime]="anime"></app-anime-card>
 </div>
 
 <ng-template #withoutContent>No hay Episodeos que mostrar!</ng-template>

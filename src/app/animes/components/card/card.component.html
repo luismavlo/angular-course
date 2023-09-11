@@ -1,11 +1,12 @@
 <div class="card">
-  <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f21a3bd28b1dda00383875569fe10e06.jpe" alt="img-card-anime">
+  <img [src]="anime.image" alt="img-card-anime">
   <div class="card-body">
-    <h3>{{ title }}</h3>
+    <h3>{{ anime.title }}</h3>
     <div>
-      <span>Episodio: {{ episodeNumber }}</span>
-      <span>genero: {{ genre }}</span>
+      <span>Episodio: {{ anime.episodeNumber }}</span>
+      <span>genero: {{ anime.genre }}</span>
     </div>
     <p>{{ isNewEpisode() }}</p>
   </div>
 </div>
+
